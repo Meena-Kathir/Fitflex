@@ -1,0 +1,196 @@
+/* ===== General Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* ===== Container for all pages ===== */
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px 50px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+    margin: 20px auto;
+  }
+  
+  /* Hover effect on container */
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ===== Headings ===== */
+  h1 {
+    font-weight: 800;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 12px;
+  }
+  
+  /* Subheading / paragraph */
+  p {
+    color: #e0dedecc;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    font-weight: 400;
+  }
+  .center-content {
+    flex: 2;
+    text-align: center;
+  }
+  
+
+  /* ===== Navigation Menu (for index) ===== */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: fit-content;
+  }
+  
+  nav ul li a {
+    color: #f3eac2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 12px 28px;
+    border: 2px solid #f3eac2;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+    background: #f3eac2;
+    color: #764ba2;
+    box-shadow: 0 6px 12px rgba(243, 234, 194, 0.7);
+    transform: translateY(-3px);
+  }
+  
+  /* ===== Cards for Workouts and Diet Pages ===== */
+  .card {
+    background: linear-gradient(135deg, #fcca46, #f39c12);
+    padding: 25px 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(243, 156, 18, 0.5);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4b2e00;
+    max-width: 500px;
+    transition: transform 0.25s ease;
+    cursor: default;
+  }
+  .center-content {
+    flex: 2;
+    text-align: center;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(243, 156, 18, 0.7);
+  }
+  
+  /* ===== Notifications for Progress Page ===== */
+  .notify {
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    user-select: none;
+  }
+  
+  /* Notification colors */
+  .success {
+    background: #27ae60;
+  }
+  
+  .warning {
+    background: #f39c12;
+  }
+  
+  .info {
+    background: #2980b9;
+  }
+  
+  .error {
+    background: #c0392b;
+  }
+  
+  /* ===== BMI Calculator ===== */
+  label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgb(196, 5, 5);
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    box-shadow: inset 0 0 12px #f3eac2;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background-color: #c4a108;
+    color: #764ba2;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(14, 13, 13, 0.925);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #695b16;
+  }
+  .center-content {
+    flex: 2;
+    text-align: center;
+  }
+  .center-content {
+    margin: 20px 0;
+  }
